@@ -1,0 +1,94 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+html, body {
+    width:100%;
+    height:100%;
+}
+
+body {
+    font-family:sans-serif;
+}
+
+body > div {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:transparent center no-repeat;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: white;
+    border: 2px black;
+}
+
+body > div:nth-child(1) {
+    background-color: grey;
+
+}
+
+body > div:nth-child(1) div {
+    background-color: white;
+    text-align: center;
+    display: inline;
+    width: 80%;
+}
+
+nav div {
+    align-self: center;
+}
+body > div:nth-child(2) {
+    background:black;
+    overflow:hidden;
+}
+
+body > div:nth-child(3) {
+    background-color: lightgrey;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+body > div:nth-child(3) > h1 {
+    position: fixed;
+    top: 90%;
+}
+.projbox {
+    height: 30%;
+    width: 30%;
+    margin: 0% 10% 5% 10%;
+    background-color: white;
+}
+.chart > div {
+  font: 10px sans-serif;
+  background-color: steelblue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+  display: fixed;
+  height: 80px;
+  margin: 25px 0 0 0;
+}
+
+.box {
+    position:absolute;
+    left:0;
+    height:100%;
+    background: lightsteelblue;
+}
+
+p {
+    margin:1em 0;
+}
+
+
+/*media query here to display as column if on mobile*/
