@@ -1,63 +1,91 @@
 <!DOCTYPE html>
-<!-- saved from url=(0056)http://prinzhorn.github.io/skrollr/examples/pausing.html -->
-<html class="skrollr skrollr-desktop">
+<html>
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<title>aponty the Professional</title>
-	<link rel="stylesheet" href="./style.css">
-	<style type="text/css">
-		:root #content>#right>.dose>.dosesingle,
-		:root #content>#center>.dose>.dosesingle {
-			display: none !important;
-		}
-	</style>
+	<title>Anson Pontynen</title>
+	<link rel="stylesheet" href="./style.css" />
 </head>
 
-<body style="height: 3289.5px;">
-	<div data-0="transform:translate(0,0%);" data-100p="transform:translate(0,-100%);" class="skrollable skrollable-after" style="transform: translate(0px, -100%);">
-		<h1>ANSON 100!%</h1>
-		<h4>might add a tagline here or an animated graph once I figure those out</h4>
-		<div>
-			<nav>
-				<div>skillz/tools</div>
-				<div>projects</div>
-				<div>resume</div>
-				<div>contact</div>
-			</nav>
-		</div>
-	</div>
-	<div data-0="transform:translate(0,100%);" data-100p="transform:translate(0,0%)" data-_box-100p="" data-_box-200p="transform:translate(0,-100%)" class="skrollable skrollable-after" style="transform: translate(0px, -100%);">
-		<h1>TOOLS</h1>
-		<div class="box skrollable skrollable-after" data-100p="width:0%;" data-_box-100p="width:100%" style="width: 100%;">
-			<div class="chart">
-				<!-- going to re-do this with d3.js -->
-				<div style="width: 100%;">skillz</div>
-				<div style="width: 90%;">skillz</div>
-				<div style="width: 80%;">skillz</div>
-				<div style="width: 70%;">skillz</div>
-				<div style="width: 60%;">skillz</div>
+<body>
+
+
+
+	<div id='slide-1' class='slide-container'
+		data-0="transform:translate(0,0%);"
+		data-100p="transform:translate(0,-89%);"
+	>
+	<!-- skrollable skrollable-after to make it gap after-->
+
+		<div class="slide-background"
+			data-center="background-position: 0% 0px;"
+			data-top-bottom="background-position: 45% -150px;"
+			data-anchor-target="#slide-1">
+
+			<div class="slide-content-container">
+				<div class="slide-content">
+					<h1>Anson Pontynen</h1>
+					<h4>might add a tagline here or an animated graph once I figure those out</h4>
+					<nav class="desktop"
+						data-center="bottom: 45%; width: 30%; left: 35%"
+						data-100="bottom: 10%;"
+						data-250="bottom: 10%; width: 100%; left: 0; box-shadow: none;"
+					>
+						<div>
+							<a href="#skills">Skills</a>
+							<a href="#projects">Projects</a>
+							<a href="#about">About</a>
+							<a href="#contact">Contact</a>
+						</div>
+					</nav>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div data-_box-100p="transform:translate(0,100%);" data-_box-200p="transform:translate(0,0%);" class="skrollable skrollable-after" style="transform: translate(0px, 0%);">
+
+<!-- for later -->
+	<!-- <div id="intermission"
+		class="slide-background skrollable-between"
+		data-center="background-position: 50% 100px;"
+		data-top-bottom="background-position: 50% -100px;"
+		data-anchor-target="#slide-1">
+	 	SKILLS
+	 </div> -->
+
+	<div id='slide-2' class='slide-container skrollable skrollable-after'
+		data-0="transform:translate(0,100%);"
+		data-100p="transform:translate(0,0%)"
+		data-box-100p="" data-box-200p="transform:translate(0,-100%)"
+		>
+		<h1>TOOLS</h1>
+		<div class="box skrollable skrollable-after"
+			data-100p="width:0%;"
+			data-_box-100p="width:100%">
+			<div class="chart">
+				<div style="width: 100%;">skillz</div>
+				<div style="width: 100%;">skillz</div>
+				<div style="width: 100%;">skillz</div>
+				<div style="width: 100%;">skillz</div>
+				<!-- <div style="width: 100%;">skillz</div> -->
+			</div>
+		</div>
+	</div>
+
+	<div id='slide-3' class='slide-container skrollable skrollable-after'
+		data-_box-100p="transform:translate(0,100%);"
+		data-_box-200p="transform:translate(0,0%);"
+		>
 		<div class='projbox'>proj 1</div>
 		<div class='projbox'>proj 2</div>
 		<div class='projbox'>proj 3</div>
 		<div class='projbox'>proj 4</div>
-		<h1>CALL ME MAYBE (this'll be a nav bar fixed on the bottom w/ links etc)</h1>
+		<h1>CALL ME MAYBE</h1>
 	</div>
+
+
 	<script type="text/javascript" src="./skrollr.min.js"></script>
-	<script type="text/javascript">
-		skrollr.init({
-			constants: {
-				//fill the box for a "duration" of 150% of the viewport (pause for 150%)
-				//adjust for shorter/longer pause
-				box: '100p'
-			}
-		});
-	</script>
+	<script type="text/javascript" src="./main.js"></script>
 </body>
 
 </html>

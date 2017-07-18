@@ -1,94 +1,109 @@
-* {
-    margin:0;
-    padding:0;
-}
+/*body {
+    background-color: rgba(0,128,128, .75);
+}*/
 
-html, body {
-    width:100%;
-    height:100%;
+nav.desktop {
+  background-color: white;
+  /*rgba(0,128,128, .75);*/
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 15px 0;
+  position: absolute;
+  height: 30px;
+  z-index: 2;
 }
-
-body {
-    font-family:sans-serif;
-}
-
-body > div {
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:transparent center no-repeat;
-    background-size:cover;
+.slide-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent center no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-h1 {
-    color: white;
-    border: 2px black;
+.slide-content {
+    max-width: 450px;
+    margin: 250px auto 0 auto;
+    /*display: table-cell;*/
+    vertical-align: middle;
+    color: black;
+    padding: 0 8%;
+    text-align: center
 }
 
-body > div:nth-child(1) {
-    background-color: grey;
-
-}
-
-body > div:nth-child(1) div {
-    background-color: white;
+.slide-background {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
     text-align: center;
-    display: inline;
-    width: 80%;
 }
 
-nav div {
-    align-self: center;
-}
-body > div:nth-child(2) {
-    background:black;
-    overflow:hidden;
+#slide-1 .slide-background {
+    background-image: url('./canoe.jpg')
 }
 
-body > div:nth-child(3) {
-    background-color: lightgrey;
+/*#intermission {
+    font-size: 80px;
+    color: black;
+    background-color: teal;
+    text-align: center;
+    position: absolute;
+    width: 100vw;
+    z-index: 100;
+    background-position: -20px;
+}*/
+
+#slide-2 {
+    background-color: black;
+}
+
+#slide-3 {
+    background-color: white;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
 }
-body > div:nth-child(3) > h1 {
+
+#slide-3>h1 {
     position: fixed;
     top: 90%;
 }
+
 .projbox {
     height: 30%;
     width: 30%;
     margin: 0% 10% 5% 10%;
-    background-color: white;
-}
-.chart > div {
-  font: 10px sans-serif;
-  background-color: steelblue;
-  text-align: right;
-  padding: 3px;
-  margin: 1px;
-  color: white;
-  display: fixed;
-  height: 80px;
-  margin: 25px 0 0 0;
+    background-color: lightgrey;
 }
 
+
+.chart>div {
+    font: 10px sans-serif;
+    background-color: steelblue;
+    text-align: center;
+    padding: 3px;
+    margin: 1px;
+    color: white;
+    display: fixed;
+    height: 80px;
+    margin: 25px 0 0 0;
+}
+/*
 .box {
-    position:absolute;
-    left:0;
-    height:100%;
+    position: absolute;
+    left: 0;
+    height: 100%;
     background: lightsteelblue;
-}
-
-p {
-    margin:1em 0;
-}
+}*/
 
 
 /*media query here to display as column if on mobile*/
