@@ -6,119 +6,94 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<title>Anson Pontynen</title>
 	<link href="https://fonts.googleapis.com/css?family=Antic+Slab" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
 	<link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
 
-<nav class="wrap"
-	data-anchor-target="#about-slide"
-	data--50-top="opacity: 0; position: fixed; top: 0;"
-	data--710-top="opacity:0;"
-	data--720-top="opacity:1;"
-	data--3000-top="opacity:1;"
->
-	<div>
-		<a href="#skills-slide" data-menu-top="780">SKILLS</a>
-		<a href="#about-slide" data-menu-top="2290">ABOUT</a>
-		<a href="#projects-slide" data-menu-top="3068">PROJECTS</a>
-		<a href="#contact-slide" data-menu-top="3901">CONTACT</a>
-	</div>
-</nav>
+	<nav class="wrap" data-anchor-target="#about-slide" data--50-top="opacity: 0; position: fixed; top: 0;" data--710-top="opacity:0;" data--720-top="opacity:1;" data--3000-top="opacity:1;">
+		<div>
+			<a href="#skills-slide" data-menu-top="1555">Skills</a>
+			<a href="#about-slide" data-menu-top="2360">About</a>
+			<a href="#projects-slide" data-menu-top="3740">Projects</a>
+			<a href="#contact-slide" data-menu-top="5455">Contact</a>
+		</div>
+	</nav>
 
-<div class="skrollr-body">
+	<div class="skrollr-body">
 
-	<div id='header-slide' class='slide-container'
-		data-0="transform:translate(0,0%);"
-		data-100p="transform:translate(0,-89%);"
-	>
-
-		<div class="slide-background"
-			data-center="background-position: 0% 0px;"
-			data-top-bottom="background-position: 45% -150px;"
-			data-anchor-target="#header-slide">
-
-			<div class="slide-content-container">
-				<div class="header-content">
-					<h1>Anson Pontynen</h1>
-					<h4>Humanities Nerd => Data Analyst => Web Dev</h4>
-
-					<nav class="header"
-						data-center="top: 45vh; width: 30%; left: 35%"
-						data-100="top: 60vh;"
-						data-250="top: 83vh; width: 100%; left: 0;"
-					>
-						<div>
-							<a href="#skills-slide" data-menu-top="780">Skills</a>
-							<a href="#about-slide" data-menu-top="2290">About</a>
-							<a href="#projects-slide" data-menu-top="3068">Projects</a>
-							<a href="#contact-slide" data-menu-top="3901">Contact</a>
-						</div>
-					</nav>
+		<div id='header-slide' class='slide-container' data-0="transform:translate(0,0%);" data-100p="transform:translate(0,-89%);">
+			<div class="slide-background" data-center="background-position: 0% 0px;" data-top-bottom="background-position: 45% -150px;" data-anchor-target="#header-slide">
+				<div class="slide-content-container">
+					<div class="header-content">
+						<h1>Anson Pontynen</h1>
+						<h4>Humanities Nerd => Data Analyst => Web Dev</h4>
+						<nav class="header" data-center="top: 45vh; width: 30%; left: 35%" data-100="top: 60vh;" data-250="top: 83vh; width: 100%; left: 0;">
+							<div>
+								<a href="#skills-slide" data-menu-top="1555">Skills</a>
+								<a href="#about-slide" data-menu-top="2360">About</a>
+								<a href="#projects-slide" data-menu-top="3740">Projects</a>
+								<a href="#contact-slide" data-menu-top="5455">Contact</a>
+							</div>
+						</nav>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<div id='skills-slide' class='slide-container skrollable skrollable-after'
-		data-0="transform:translate(0,100%);"
-		data-100p="transform:translate(0,0%)"
-		data-box-100p=""
-		data-box-200p="transform:translate(0,-100%)"
-		>
-		<div class="box skrollable skrollable-after"
-			data-0p="width:0%;"
-			data-_box-100p="width:100%">
-			<h1>Skills</h1>
-			<div class="chart">
-				<div style="width: 90%;">can computers</div>
-				<div style="width: 80%;">interwebs</div>
-				<div style="width: 70%;">skillz</div>
-				<div style="width: 60%;">skillz</div>
-				<div style="width: 100%;">skillz</div>
+		<div id='skills-slide' class='slide-container skrollable skrollable-after' data-0="transform:translate(0,100%);" data-100p="transform:translate(0,0%)">
+			<div class="textbox">
+				<h1>Skills</h1>
+			</div>
+			<div class="box skrollable skrollable-after" data-0p="width:0%;" data-_box-100p="width:100%">
+				<div class="chart">
+					<div style="width: 100%;"></div>
+					<div style="width: 90%;">
+						<h3>Backend</h3>
+						<p>Node.js, Express.js, Ruby/Rails, PSQL</p>
+					</div>
+					<div style="width: 80%;">
+						<h3>Frontend</h3>
+						<p>HTML, CSS, JavaScript, React, jQuery, Skrollr, Elm</p>
+					</div>
+					<div style="width: 70%;">
+						<h3>Etc.</h3>
+						<p>Babylon.js (3D modeling/game development), C++/Arduino, Data Analysis, Motorcycle Repair</p>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<div id='about-slide' class='slide-container skrollable skrollable-after following'
-		data-_box-100p="transform:translate(0,100%);"
-		data-_box-200p="transform:translate(0,0%);"
-		data-_box-250p=""
-		>
-
-		<div class="textbox">
-			<h1>About Me</h1>
-			<img src="./assets/laugh.jpg" alt="hello!">
-			<p>From literature and philosophy to data analysis to web development, I enjoy complexity and I’m excited to problem-solve and build in new ways.</p>
-			<p>More than any particular language or technology, my best skills are learning quickly and a natural interest in new challenges.</p>
-			<p>Beyond the resume, I’m an avid 3-7 times a week climber (schedule permitting) and budding motorcycle aficionado (I try to keep an old Suzuki running, with moderate success). I like long walks on the beach and fluffy or non-fluffy animals of every shape and size (though some cats are just rude). I have many leather-bound books and my apartment smells of rich mahogany (or motor oil, close enough).</p>
-
-
-			<a href="#">Resume</a>
+		<div id='about-slide' class='slide-container skrollable skrollable-after following' data-_box-100p="transform:translate(0,100%);" data-_box-200p="transform:translate(0,0%);" data-_box-250p="">
+			<div class="textbox">
+				<h1>About Me</h1>
+				<img src="./assets/laugh.jpg" alt="hello!">
+				<p>From literature and philosophy to data analysis to web development, I enjoy complexity and I’m excited to problem-solve and build in new ways.</p>
+				<p>More than any particular language or technology, my best skills are learning quickly and a natural interest in new challenges.</p>
+				<p>Beyond the resume, I’m an avid 3-7 times a week climber (schedule permitting) and budding motorcycle aficionado (I try to keep an old Suzuki running, with moderate success). I like long walks on the beach and fluffy or non-fluffy animals of every shape and size (though some cats are just rude). I have many leather-bound books and my apartment smells of rich mahogany (or motor oil, close enough).</p>
+				<a href="#">Resume</a>
+			</div>
 		</div>
 
-	</div>
-
-	<div id='projects-slide' class='slide-container skrollable skrollable-after following'
-		data-_box-250p="transform:translate(0,100%); "
-		data-_box-450p="transform:translate(0,-50%);"
-		data-_box-500p=""
-		>
+		<div id='projects-slide' class='slide-container skrollable skrollable-after following' data-_box-250p="transform:translate(0,100%); " data-_box-450p="transform:translate(0,-50%);" data-_box-500p="">
+			<h1>Projects</h1>
 			<div class='projbox'>
 				<a href="https://aponty.github.io/font_fighter/index.html">
 					<img src="./assets/font_fighter.gif" alt="Font Fighter">
 				</a>
 				<div class='description'>
 					<h2>Font Fighter</h2>
-					<p>A brick-breaker style game built using HTML5, CSS, jQuery, and (primarily) good old vanilla JavaScript. Includes dynamically adjusted ball movement, full collision detection, dynamically adjusted levels, score keeping, a high scores page, and more. </p>
+					<p>A brick-breaker style game built using HTML5, CSS, jQuery, and (primarily) good old vanilla JavaScript. Includes dynamically adjusted ball movement, full collision detection, dynamically adjusted levels, score keeping, a high scores page, and more.
+						</p>
 					<p>Click image to check it out, or <a href="https://github.com/aponty/game_project">here to see see the details on GitHub</a></p>
 				</div>
 			</div>
 			<div class='projbox'>
 				<div class='description'>
 					<h2>Trellis</h2>
-					<p>Trellis is an activity logging app aiming to help users with insomnia by allowing them to track habits and communicate with other users facing similar challenges. Trellis is built in Node.js using Express, Mustache, Passport, and Moment, Import IO and Chart.js.</p>
+					<p>Trellis is an activity logging app aiming to help users with insomnia by allowing them to track habits and communicate with other users facing similar challenges. Trellis is built in Node.js using Express, Mustache, Passport, and Moment, Import IO
+						and Chart.js.</p>
 					<p>Click image to check it out, or <a href="https://github.com/aponty/express_project">here to see see the details on GitHub</a></p>
 				</div>
 				<a href="https://glacial-fjord-72291.herokuapp.com/">
@@ -145,24 +120,20 @@
 					<img src="./assets/babylon.gif" alt="Babylon">
 				</a>
 			</div>
-	</div>
+		</div>
 
-	<div id='contact-slide' class='slide-container skrollable skrollable-after following'
-		data-_box-500p="transform:translate(0,100%); "
-		data-_box-600p="transform:translate(0,0%);"
-	>
-		<div class="textbox">
-			<h1>Contact Information</h1>
-			<a href="https://github.com/aponty">GitHub</a>
-			<a href="https://linkedin.com/in/aponty">LinkedIn</a>
-			<a href="https://profiles.generalassemb.ly/profiles/aponty">GA Profile</a>
-			<a href="#">Resume</a>
-			<a href="mailto:aponty@gmail.com">aponty@gmail.com</a>
+		<div id='contact-slide' class='slide-container skrollable skrollable-after following' data-_box-500p="transform:translate(0,100%); " data-_box-600p="transform:translate(0,0%);">
+			<div class="textbox">
+				<h1>Contact Information</h1>
+				<a href="https://github.com/aponty">GitHub</a>
+				<a href="https://linkedin.com/in/aponty">LinkedIn</a>
+				<a href="https://profiles.generalassemb.ly/profiles/aponty">GA Profile</a>
+				<a href="#">Resume</a>
+				<a href="mailto:aponty@gmail.com">aponty@gmail.com</a>
+			</div>
 		</div>
 
 	</div>
-</div>
-
 
 	<script type="text/javascript" src="./skrollr.min.js"></script>
 	<script type="text/javascript" src="./skrollr.menu.min.js"></script>
